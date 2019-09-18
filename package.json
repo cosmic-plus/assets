@@ -1,0 +1,25 @@
+{
+  "name": "@cosmic-plus/assets",
+  "version": "1.0.0",
+  "description": "Shared Cosmic.plus web application assets",
+  "author": "MisterTicot <mister.ticot@cosmic.plus>",
+  "homepage": "https://cosmic.plus/#view:assets",
+  "repository": "github:cosmic-plus/assets",
+  "license": "MIT",
+  "keywords": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "prettier --write --no-semi 'src/**/*.{js,json,md}' '*.{js,json,md}'",
+    "commit-release": "[ \"$version\" ] && git ci -am \"Release $version\"",
+    "tag-release": "[ \"$version\" ] && git tag -s \"$version\" -m \"Release $version\"",
+    "push-release": "git push --follow-tags",
+    "make-release": "npm run commit-release",
+    "publish-release": "npm run tag-release && npm run push-release && npm publish"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

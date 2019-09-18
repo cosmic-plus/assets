@@ -1,0 +1,22 @@
+/* Universal rules */
+
+[hidden] {
+  display: none!important;
+}
+
+html {
+  box-sizing: border-box;
+  vertical-align: middle;
+
+  // Prevent Android Chrome font boost.
+  * { max-height: 100%; }
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  vertical-align: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
