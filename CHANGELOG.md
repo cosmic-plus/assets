@@ -19,6 +19,12 @@ Versioning](https://semver.org/spec/v2.0.0.html)**. Version syntax is
 backward-compatibility and can be updated to without risk of breakage. For major
 releases, please check this changelog before upgrading.
 
+## 1.0.1 - 2019-09-21
+
+### Fixed
+
+- Meta: Fix normalize.css loading path.
+
 ## 1.0.0 - 2019-09-18
 
 Initial release.
