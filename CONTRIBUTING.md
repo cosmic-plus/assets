@@ -14,7 +14,7 @@ Please use the [dedicated form](https://github.com/cosmic-plus/assets/issues/new
 ## Pull Requests
 
 1. Fork [assets](https://github.com/cosmic-plus/assets).
-2. Commit your changes to the fork
+2. Commit your changes to the fork.
 3. Create a pull request.
 
 If you want to implement a new feature, please get in touch first:
@@ -36,6 +36,7 @@ git clone https://git.cosmic.plus/assets
 **Commit:**
 
 ```
+npm run lint
 git ci ...
 ```
 
