@@ -19,6 +19,13 @@ Versioning](https://semver.org/spec/v2.0.0.html)**. Version syntax is
 backward-compatibility and can be updated to without risk of breakage. For major
 releases, please check this changelog before upgrading.
 
+## 1.0.2 - 2019-11-23
+
+### Fixed
+
+- Scss: Fix global selector. Font boost protection was applied to the whole tree
+  rather than to the root elements.
+
 ## 1.0.1 - 2019-09-21
 
 ### Fixed
