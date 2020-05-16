@@ -1,0 +1,67 @@
+/* Grey */
+@function grey ($lv) {
+  @if $lv==0 {
+    @return #ffffff
+  }
+  @else if $lv==1 {
+    @return #f4f4f4
+  }
+  @else if $lv==2 {
+    @return #e9e9e9
+  }
+  @else if $lv==3 {
+    @return #d4d4d4
+  }
+  @else if $lv==4 {
+    @return #a9a9a9
+  }
+  @else if $lv==5 {
+    @return #7e7e7e
+  }
+  @else if $lv==6 {
+    @return #535353
+  }
+  @else if $lv==7 {
+    @return #3e3e3e
+  }
+  @else if $lv==8 {
+    @return #333333
+  }
+  @else if $lv==9 {
+    @return #292929
+  }
+}
+
+/* Primary */
+@function primary ($lv) {
+  @if $lv==0 {
+    @return #f0f8ff
+  }
+  @else if $lv==1 {
+    @return #daeeff
+  }
+  @else if $lv==2 {
+    @return #c4e3ff
+  }
+  @else if $lv==3 {
+    @return #98cdff
+  }
+  @else if $lv==4 {
+    @return #409dff
+  }
+  @else if $lv==5 {
+    @return #006ae8
+  }
+  @else if $lv==6 {
+    @return #003f90
+  }
+  @else if $lv==7 {
+    @return #002a64
+  }
+  @else if $lv==8 {
+    @return #00204e
+  }
+  @else if $lv==9 {
+    @return #001738
+  }
+}
