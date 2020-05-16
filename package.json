@@ -1,6 +1,6 @@
 {
   "name": "@cosmic-plus/assets",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Shared Cosmic.plus web application assets",
   "author": "MisterTicot <mister.ticot@cosmic.plus>",
   "homepage": "https://cosmic.plus/#view:assets",
@@ -17,7 +17,7 @@
     "publish-release": "npm run tag-release && npm run push-release && npm publish"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.19.1"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
