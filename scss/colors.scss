@@ -1,67 +1,83 @@
-/* Grey */
+/* Helpers */
+
+@function mixhsl ($color1, $color2, $ratio) {
+  @return hsl(
+    $ratio * hue($color1) + (1 - $ratio) * hue($color2),
+    $ratio * saturation($color1) + (1 - $ratio) * saturation($color2),
+    $ratio * lightness($color1) + (1 - $ratio) * lightness($color2)
+  )
+}
+
+/* Greys */
+$white: #ffffff;
+$black: #292929;
+
 @function grey ($lv) {
   @if $lv==0 {
-    @return #ffffff
+    @return $white
   }
   @else if $lv==1 {
-    @return #f4f4f4
+    @return mixhsl($white, $black, 0.95)
   }
   @else if $lv==2 {
-    @return #e9e9e9
+    @return mixhsl($white, $black, 0.90)
   }
   @else if $lv==3 {
-    @return #d4d4d4
+    @return mixhsl($white, $black, 0.80)
   }
   @else if $lv==4 {
-    @return #a9a9a9
+    @return mixhsl($white, $black, 0.60)
   }
   @else if $lv==5 {
-    @return #7e7e7e
+    @return mixhsl($white, $black, 0.40)
   }
   @else if $lv==6 {
-    @return #535353
+    @return mixhsl($white, $black, 0.20)
   }
   @else if $lv==7 {
-    @return #3e3e3e
+    @return mixhsl($white, $black, 0.10)
   }
   @else if $lv==8 {
-    @return #333333
+    @return mixhsl($white, $black, 0.05)
   }
   @else if $lv==9 {
-    @return #292929
+    @return $black
   }
 }
 
 /* Primary */
+$primary-light: aliceblue;
+$primary-dark: #001738;
+
 @function primary ($lv) {
   @if $lv==0 {
-    @return #f0f8ff
+    @return $primary-light
   }
   @else if $lv==1 {
-    @return #daeeff
+    @return mixhsl($primary-light, $primary-dark, 0.95)
   }
   @else if $lv==2 {
-    @return #c4e3ff
+    @return mixhsl($primary-light, $primary-dark, 0.90)
   }
   @else if $lv==3 {
-    @return #98cdff
+    @return mixhsl($primary-light, $primary-dark, 0.80)
   }
   @else if $lv==4 {
-    @return #409dff
+    @return mixhsl($primary-light, $primary-dark, 0.60)
   }
   @else if $lv==5 {
-    @return #006ae8
+    @return mixhsl($primary-light, $primary-dark, 0.40)
   }
   @else if $lv==6 {
-    @return #003f90
+    @return mixhsl($primary-light, $primary-dark, 0.20)
   }
   @else if $lv==7 {
-    @return #002a64
+    @return mixhsl($primary-light, $primary-dark, 0.10)
   }
   @else if $lv==8 {
-    @return #00204e
+    @return mixhsl($primary-light, $primary-dark, 0.05)
   }
   @else if $lv==9 {
-    @return #001738
+    @return $primary-dark
   }
 }
