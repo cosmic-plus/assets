@@ -19,6 +19,12 @@ Versioning](https://semver.org/spec/v2.0.0.html)**. Version syntax is
 backward-compatibility and can be updated to without risk of breakage. For major
 releases, please check this changelog before upgrading.
 
+## 1.2.0 - 2020-06-07
+
+### Changed
+
+- Style: Make colors formula explicit.
+
 ## 1.1.0 - 2020-05-16
 
 ### Added
