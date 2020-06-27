@@ -1,15 +1,15 @@
 /* Screen-size Handling */
 
 $small-screen:
-  "screen and (min-width: 800px), screen and (min-height: 600px)";
+  "screen and (min-width: 48em), screen and (min-height: 48em)";
 $medium-screen:
-  "screen and (min-width: 1024px), screen and (min-height: 768px)";
+  "screen and (min-width: 64em), screen and (min-height: 64em)";
 $large-screen:
-  "screen and (min-width: 1366px), screen and (min-height: 1024px)";
+  "screen and (min-width: 85.375em), screen and (min-height: 85.375em)";
 $xlarge-screen:
-  "screen and (min-width: 1920px), screen and (min-height: 1366px)";
+  "screen and (min-width: 120em)";
 $xxlarge-screen:
-  "screen and (min-width: 2560px)";
+  "screen and (min-width: 160em)";
 
 @-ms-viewport { width: device-width; }
 
