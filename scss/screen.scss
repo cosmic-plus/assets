@@ -13,9 +13,7 @@ $xxlarge-screen:
 
 @-ms-viewport { width: device-width; }
 
-@media #{$small-screen} {
-  html { font-size: 1.1em; }
-}
+html { font-size: 1.1em; }
 
 @media #{$medium-screen} {
   html { font-size: 1.2em; }
